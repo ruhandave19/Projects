@@ -15,13 +15,14 @@ Breakdown of the code:
 To run the code:
 ```bash
 #Clone this repository
-git clone https://github.com/ruhandave19/C_projects.git 
+git clone https://github.com/ruhandave19/Projects.git
 #Navigate into the project folder
-cd C_projects
+cd Projects
+cd unit_converter
 #Compile the C file
-gcc unit_converter.c -o unit_converter
+gcc units.c -o units
 #Run the program
-./unit_converter
+./s
 ```
 
 Example run:

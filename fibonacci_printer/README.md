@@ -10,13 +10,14 @@ Breakdown of the code:
 To run the code:
 ```bash
 #Clone this repository
-git clone https://github.com/ruhandave19/C_projects.git 
+git clone https://github.com/ruhandave19/Projects.git
 #Navigate into the project folder
-cd C_projects
+cd Projects
+cd fibonacci_printer
 #Compile the C file
-gcc fibonacci_printer.c -o fibonacci_printer
+gcc fibonacci.c -o fibonacci
 #Run the program
-./fibonacci_printer
+./fibonacci
 ```
 
 Example run:
