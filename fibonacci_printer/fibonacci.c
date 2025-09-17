@@ -7,7 +7,7 @@ int main(){
   int i = 0;    
   int j = 1;
   int x;
-  printf("Enter a number: ");
+  printf("Enter a position: ");
   scanf("%d", &num);
   if(num>2){
     printf("The fibonacci series till position %d is ", num); 
@@ -26,4 +26,5 @@ int main(){
   else{
     printf("The fibonacci series till position 2 is 0, 1");
   }
+  return 0;
 }
