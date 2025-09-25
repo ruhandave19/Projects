@@ -22,7 +22,7 @@ cd unit_converter
 #Compile the C file
 gcc units.c -o units
 #Run the program
-./s
+./units
 ```
 
 Example run:

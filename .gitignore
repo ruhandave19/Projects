@@ -1,0 +1,13 @@
+.vscode/
+
+__pycache__/
+*.py[cod]
+
+*.exe
+
+*/.venv/
+
+Thumbs.db
+.DS_Store
+Desktop.ini
+$RECYCLE.BIN/
