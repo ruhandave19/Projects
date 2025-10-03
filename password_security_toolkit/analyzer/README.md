@@ -6,7 +6,7 @@ Usually, to calculate the entropy of passwords, the following formulae are used:
 
 (1) Simple Entropy
 
-![Formula](https://latex.codecogs.com/svg.image?H=L.log_2N&colour=333333)
+![Formula](https://latex.codecogs.com/svg.image?\color{blue}\H=L.log_2N)
 
 L = length of password, 
 
@@ -16,7 +16,7 @@ This formula is a theoretical formula that assumes maximum randomness and does n
 
 (2) Multinomial Entropy
 
-![Formula](https://latex.codecogs.com/svg.image?&space;H=log_2((L!*26^u*26^l*10^d*32*s)/(u!l!d!s!))&colour=333333)
+![Formula](https://latex.codecogs.com/svg.image?\color{blue}\&space;H=log_2((L!*26^u*26^l*10^d*32*s)/(u!l!d!s!)))
 
 L = length of password,
 
@@ -30,7 +30,7 @@ This formula is also a theoretical formula, but it takes into consideration the 
 
 (3) Realized Entropy
 
-![Formula](https://latex.codecogs.com/svg.image?H=-\sum_{i}p_ilog_2(p_i)=-L*(p_i.log_2(p_i))&colour=333333)
+![Formula](https://latex.codecogs.com/svg.image?\color{blue}\H=-\sum_{i}p_ilog_2(p_i)=-L*(p_i.log_2(p_i)))
 
 L = length of password,
 
@@ -41,7 +41,7 @@ Unlike the above two, this isn't a theoretical formula, but, as its name suggest
 
 Since the above 3 formulae have some or the other limitations, I created and employed a formula of my own using basic combinatorics that I learnt in 11th grade, in order to reduce the limitations. That formula, is:
 
-![Formula](https://latex.codecogs.com/svg.image?&space;H=log_2(((_{uc}^{26}\textrm{C})*(_{lc}^{26}\textrm{C})*(_{d}^{10}\textrm{C})*(_{s}^{32}\textrm{C})*L!)/(r_1!r_2!..r_L!))&colour=333333)
+![Formula](https://latex.codecogs.com/svg.image?\color{blue}\&space;H=log_2(((_{uc}^{26}\textrm{C})*(_{lc}^{26}\textrm{C})*(_{d}^{10}\textrm{C})*(_{s}^{32}\textrm{C})*L!)/(r_1!r_2!..r_L!)))
 
 L = length of password,
 
