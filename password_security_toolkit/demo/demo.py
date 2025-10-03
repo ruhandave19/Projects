@@ -14,37 +14,49 @@ while a > 0:
     while a > 0:
         if response_1=="y" or response_2 == "2":
             len = input("Enter length: ")
-            if len.isdigit()==False or len==0:
+            if len.isdigit()==False or len=="0":
                 print("Please enter a non-zero numerical value for length")
-                continue
+                continue 
+            while a > 0: 
+                if len=="1" or len=="2" or len=="3":
+                    print("You have entered length less than 4.\nIf the number of character sets allowed is greater than the entered length, the generated password will not include them all")
+                    break
+                else: 
+                    break
             print("Do you want to use:")
             while a > 0:
-                response_u = input("Uppercase letters? (y/n) ")
-                if response_u!="y" and response_u!="n":
-                    print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
+                while a > 0:
+                    response_u = input("Uppercase letters? (y/n) ")
+                    if response_u!="y" and response_u!="n":
+                        print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
+                        continue
+                    else: 
+                        break
+                while a > 0:
+                    response_l = input("Lowercase letters? (y/n) ")
+                    if response_l!="y" and response_l!="n":
+                        print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
+                        continue
+                    else: 
+                        break
+                while a > 0:
+                    response_d = input("Digits? (y/n) ")
+                    if response_d!="y" and response_d!="n":
+                        print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
+                        continue
+                    else: 
+                        break
+                while a > 0:
+                    response_s = input("Symbols? (y/n) ")
+                    if response_d!="y" and response_d!="n":
+                        print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
+                        continue
+                    else: 
+                        break
+                if response_u=="n" and response_l=="n" and response_d=="n" and response_s=="n":
+                    print("Please allow atleast one character type")
                     continue
-                else: 
-                    break
-            while a > 0:
-                response_l = input("Lowercase letters? (y/n) ")
-                if response_l!="y" and response_l!="n":
-                    print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
-                    continue
-                else: 
-                    break
-            while a > 0:
-                response_d = input("Digits? (y/n) ")
-                if response_d!="y" and response_d!="n":
-                    print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
-                    continue
-                else: 
-                    break
-            while a > 0:
-                response_s = input("Symbols? (y/n) ")
-                if response_d!="y" and response_d!="n":
-                    print("You have entered an incorrect key. Please enter either 'y' or 'n'.")
-                    continue
-                else: 
+                else:
                     break
             alphabet = ""
             conditions = ""
