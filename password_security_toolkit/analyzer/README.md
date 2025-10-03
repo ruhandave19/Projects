@@ -4,13 +4,13 @@ Breadown of the theory and formula used:
 
 Usually, to calculate the entropy of passwords, the following formulae are used:
 
-1) Simple Entropy
+(1) Simple Entropy
 https://latex.codecogs.com/svg.image?H=L.log_2N
 L = length of password, 
 N = character set size
 This formula is a theoretical formula that assumes maximum randomness and does not punish repetition.
 
-2) Multinomial Entropy
+(2) Multinomial Entropy
 https://latex.codecogs.com/svg.image?&space;H=log_2((L!*26^u*26^l*10^d*32*s)/(u!l!d!s!))
 L = length of password,
 u = number of uppercase letters,
@@ -18,7 +18,7 @@ d = number of digits,
 s = number of symbols
 This formula is also a theoretical formula, but it takes into consideration the exact number of individual element types from their respective sets. So, while it rewards character diversity, it still doesn't punish repetition. 
 
-3) Realized Entropy
+(3) Realized Entropy
 https://latex.codecogs.com/svg.image?H=-\sum_{i}p_ilog_2(p_i)=-L*(p_i.log_2(p_i))
 L = length of password,
 p_i = probability of finding an element from the set of unique characters in the password
@@ -34,29 +34,14 @@ s = number of unique symbols,
 r_n (n belonging to [1, L]) = number of times the corresponding element is repeating
 This formula is a theoretical formula that considers the entropy of cracking the password from a set of similar passwords. This not only punishes repetition, but also gives a high value of entropy for strong passwords.
 
-
-Breakdown of the code:
-1) Various 'for loops' have been used to iterate through:
-(a) substrings of a string, 
-(b) elements of a set and 
-(c) keys and values in a dictionary.
-2) 'if-elif' has been used to:
-(a) check for substring type (digit/lowercase/uppercase/symbol) and take counts for each type,
-(b) see if element is present in a dictionary, and, if not, add that element as a key with it's value as one, and if yes, increment the value of that element by one,
-(c) take only those cases where value in dictionary is greater than 1,
-(d) check if the calculated entropy lies in a particular set and give score accordingly.
-3) math module has been used to:
-(a) compute the combinations that are required in the formula
-(b) computer factorials
-(c) compute logarithms
-
 To run the code:
 ```bash
 #Clone this repository
 git clone https://github.com/ruhandave19/Projects.git
 #Navigate into the project folder
 cd Projects
-cd password_strength_analyser
+cd password_security_toolkit
+cd analyzer
 #Run the script
 py password.py
 ```

@@ -7,11 +7,6 @@ The conversions offered are:
 4) pounds to kgs
 5) inches to metres
 
-Breakdown of the code:
-1) A 'for loop' has been used to repeatedly prompt the user for an input.
-2) A 'break;' statement is used for when the user enters the corresponding key to exit the conversion loop.
-3) An 'if-else if ladder' has been used to guide the compiler to the unit conversion for which the user provided the input.
-
 To run the code:
 ```bash
 #Clone this repository
@@ -40,20 +35,6 @@ Enter a value: 4
 
 Enter value in pounds: 100
 The entered value in kgs is 45.351
-
-Following are the options:
-1)kms to miles
-2)inches to foot
-3)cms to inches
-4)pounds to kgs
-5)inches to metres
-To go for conversion, enter the number that the conversion is listed as
-To quit, press 9
-
-Enter a value: 1
-
-Enter value in kms: 57
-The entered value in miles is 35.426
 
 Following are the options:
 1)kms to miles

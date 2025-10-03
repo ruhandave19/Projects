@@ -6,6 +6,7 @@ __pycache__/
 *.exe
 
 */.venv/
+**/.venv/
 
 Thumbs.db
 .DS_Store
