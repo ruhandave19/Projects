@@ -6,7 +6,7 @@ Usually, to calculate the entropy of passwords, the following formulae are used:
 
 (1) Simple Entropy
 
-![Formula](https://latex.codecogs.com/svg.image?\color{blue}\H=L.log_2N)
+![Formula](https://latex.codecogs.com/svg.image?\color{blue}\&space;H=L.log_2N)
 
 L = length of password, 
 
@@ -30,7 +30,7 @@ This formula is also a theoretical formula, but it takes into consideration the 
 
 (3) Realized Entropy
 
-![Formula](https://latex.codecogs.com/svg.image?\color{blue}\H=-\sum_{i}p_ilog_2(p_i)=-L*(p_i.log_2(p_i)))
+![Formula](https://latex.codecogs.com/svg.image?\color{blue}\&space;H=-\sum_{i}p_ilog_2(p_i)=-L*(p_i.log_2(p_i)))
 
 L = length of password,
 
