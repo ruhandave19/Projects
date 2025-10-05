@@ -17,12 +17,6 @@ while a > 0:
             if len.isdigit()==False or len=="0":
                 print("Please enter a non-zero numerical value for length")
                 continue 
-            while a > 0: 
-                if len=="1" or len=="2" or len=="3":
-                    print("You have entered length less than 4.\nIf the number of character sets allowed is greater than the entered length, the generated password will not include them all")
-                    break
-                else: 
-                    break
             print("Do you want to use:")
             while a > 0:
                 while a > 0:
