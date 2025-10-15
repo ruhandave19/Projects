@@ -18,3 +18,7 @@ Consists of 3 projects:
 (b) Password Generator: This generates a password of length 30 with atleast one uppercase letter, one lowercase letter, one character and one digit.
 
 (c) Demo: This allows the user to make a custom password (ie, with custom length, type of characters to be used) with the generator which then uses the analyzer to give a rating to the generated password.
+
+(4) Project 4: 4_bit_adder_subtractor (Python)
+
+This demonstrates the logic behind a 4 bit adder subtractor eith the help of user input.
