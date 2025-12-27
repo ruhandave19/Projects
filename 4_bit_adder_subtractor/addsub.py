@@ -91,7 +91,7 @@ if -8<=h<=0:
     ll = -8-h
     while a>0:
         k = int(input(f"Enter B (from {ll} to {ul}): "))
-        if k<-8 or k>7:
+        if k<ll or k>ul:
             print(f"Please enter a number from {ll} to {ul}: ")
             continue
         else:
@@ -101,7 +101,7 @@ else:
     ll = -8
     while a>0:
         k = int(input(f"Enter B (from {ll} to {ul}): "))
-        if k<-8 or k>7:
+        if k<ll or k>ul:
             print(f"Please enter a number from {ll} to {ul}")
             continue
         else:

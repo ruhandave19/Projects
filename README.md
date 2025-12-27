@@ -22,3 +22,15 @@ Consists of 3 projects:
 (4) Project 4: 4_bit_adder_subtractor (Python)
 
 This demonstrates the logic behind a 4 bit adder subtractor eith the help of user input.
+
+(5) Project 5: iris_classifier (Python)
+
+Consists of 2 projects:
+
+(a) Iris accuracy: Showcases the accuracy at which iris dataset can be predicted
+
+(b) Iris predict: Predicts the species based on user input measurements.
+
+(6) Project 6: port_scanner (Python)
+
+Allows users to scan ports on their system
