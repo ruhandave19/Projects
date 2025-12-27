@@ -30,5 +30,5 @@ Importing and training SVM...
 Done
 Decision Tree Accuracy: 1.0
 SVM Accuracy: 1.0
-![Iris PCA Visualization](images/iris_pca.png)
 ```
+![Iris PCA Visualization](images/iris_pca.png)
