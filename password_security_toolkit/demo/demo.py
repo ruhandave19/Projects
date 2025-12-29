@@ -17,12 +17,6 @@ while a > 0:
             if len.isdigit()==False or len=="0":
                 print("Please enter a non-zero numerical value for length")
                 continue 
-            while a > 0: 
-                if len=="1" or len=="2" or len=="3":
-                    print("You have entered length less than 4.\nIf the number of character sets allowed is greater than the entered length, the generated password will not include them all")
-                    break
-                else: 
-                    break
             print("Do you want to use:")
             while a > 0:
                 while a > 0:
@@ -58,21 +52,28 @@ while a > 0:
                     continue
                 else:
                     break
-            alphabet = ""
-            conditions = ""
         if response_1=="y" or response_2 == "1" or response_2 == "2":
             s = set("!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
+            alphabet = ""
             responses = {string.ascii_uppercase: response_u, string.ascii_lowercase: response_l, string.digits: response_d, string.punctuation: response_s}
-            conditions_dict = {"any(c.islower() for c in password)": response_u, "any(c.isupper() for c in password)": response_l, "any(c.isdigit() for c in password)": response_d, "any(c in s for c in password)": response_s}
             for k, v in responses.items():
                 if v=="y":
                     alphabet = alphabet + k
-            for k, v in conditions_dict.items():
-                if v=="y":
-                    conditions = conditions + k + " and "
             while True:
                 password = ''.join(secrets.choice(alphabet) for i in range(int(len)))
-                if (conditions):
+                class Pass:
+                    def __init__(password):
+                        Pass.password = password
+                conditions = []
+                if response_u == "y":
+                    conditions.append(lambda p: any(c.isupper() for c in p.password))
+                if response_l == "y":
+                    conditions.append(lambda p: any(c.islower() for c in p.password))
+                if response_d == "y":
+                    conditions.append(lambda p: any(c.isdigit() for c in p.password))
+                if response_s == "y":
+                    conditions.append(lambda p: any(c in s for c in p.password))
+                if (check(password) for check in conditions):
                     break
             print(f"Password: {password}")
             all_elements = list()
