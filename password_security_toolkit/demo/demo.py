@@ -73,7 +73,7 @@ while a > 0:
                     conditions.append(lambda p: any(c.isdigit() for c in p.password))
                 if response_s == "y":
                     conditions.append(lambda p: any(c in s for c in p.password))
-                if (check(password) for check in conditions):
+                if all(check(password) for check in conditions):
                     break
             print(f"Password: {password}")
             all_elements = list()
