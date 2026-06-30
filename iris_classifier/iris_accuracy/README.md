@@ -14,6 +14,10 @@ git clone https://github.com/ruhandave19/Projects.git
 cd Projects
 cd iris_classifier
 cd iris_accuracy
+#Create and activate a virtual environment
+pythom -m venv .venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
 #Install dependencies 
 pip install -r requirements.txt
 #Run the script

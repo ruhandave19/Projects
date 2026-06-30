@@ -34,3 +34,7 @@ Consists of 2 projects:
 (6) Project 6: port_scanner (Python)
 
 Allows users to scan ports on their system
+
+(7) Project 7: ai_chatbot (Python)
+
+Simple terminal based chatbot made using Groq API
