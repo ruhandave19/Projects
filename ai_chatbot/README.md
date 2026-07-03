@@ -1,13 +1,14 @@
-This project features a terminal based AI Chatbot created using Groq API, without using the SDK.
+# Terminal AI Chatbot
 
-It allows the user to engage in a basic conversation with AI on their terminal, and the freedom to
-end the conversation with a trigger word.
+A terminal-based AI chatbot built using the Groq API with raw HTTP requests.
 
-dotenv is used to ensure safety and privacy of the user by hiding the API key.
+## Features
+- Engage in a multi-turn conversation with an LLM directly from your terminal
+- Type `Bye` to end the conversation gracefully
+- API key protected using a `.env` file via `python-dotenv`
+- Error states handled cleanly using Python's `Enum` module
 
-The code also accounts for possible errors with the use of 'Enum' module.
-
-To run the code:
+## How to Run
 ```bash
 #Clone this repository
 git clone https://github.com/ruhandave19/Projects.git
@@ -29,7 +30,7 @@ GROQ_API_KEY=your_key_here
 py ac.py
 ```
 
-Example output:
+## Example Output
 ```bash
 Type 'Bye' to exit the conversation
 User: Hello, my name is Ajay.                        
@@ -39,3 +40,13 @@ Assistant: Sometimes it's nice just to say hello. If you change your mind or nee
 User: Bye # "Bye" is the exit keyword, and the goodbye reply below is hardcoded to save tokens
 Assistant: Goodbye. It was nice talking to you!
 ```
+
+## Changelog
+
+### v2.0
+- Added graceful error handling for rate limits, invalid API keys, and server errors
+- Added exponential backoff retry for transient errors (429, 500, 503)
+- Added streaming responses
+
+### v1.0
+- Initial release
