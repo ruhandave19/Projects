@@ -43,10 +43,12 @@ Assistant: Goodbye. It was nice talking to you!
 
 ## Changelog
 
+### v3.0
+- Added streaming responses at readable speeds
+
 ### v2.0
 - Added graceful error handling for rate limits, invalid API keys, and server errors
 - Added exponential backoff retry for transient errors (429, 500, 503)
-- Added streaming responses
 
 ### v1.0
 - Initial release

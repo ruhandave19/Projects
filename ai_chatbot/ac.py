@@ -17,35 +17,54 @@ error_reason = {
     503: "Groq service temporarily unavailable"
 }
 
-def chat(messages, retries=3):
+def chat(messages, retries=3, print_reply=False):
     for attempt in range(retries):
         r = requests.post(base_url, headers=HEADERS,
-                        json={"model":"llama-3.3-70b-versatile", "messages":messages})
-        reason = error_reason.get(r.status_code, "Unknown error")
+                        json={"model":"llama-3.3-70b-versatile", "messages":messages, "stream":True},
+                        stream=True)
         if r.status_code in (429, 500, 503):
             if attempt==retries-1:
                 print("All retries failed. Please try again after some time.")
                 return ChatStatus.ERROR
+            reason = error_reason.get(r.status_code, "Unknown error")
             wait = 2**attempt
-            print(f"Error {r.status_code}: {reason}\nWaiting {wait}s before retrying..")
+            print(f"Error {r.status_code} - {reason}\nWaiting {wait}s before retrying..")
             time.sleep(wait)
             continue
         elif not r.ok:
-            print(f"Error {r.status_code}: {reason}")
+            reason = error_reason.get(r.status_code, "Unknown error")
+            print(f"Error {r.status_code} - {reason}")
             return ChatStatus.ERROR
-        return r.json()["choices"][0]["message"]["content"]
+        full_reply = ""
+        for line in r.iter_lines():
+            if not line:
+                continue
+            line = line.decode("utf-8")
+            if line.startswith("data: "):
+                data = line[6:]
+                if data == "[DONE]":
+                    print()
+                    break
+            try:
+                chunk = json.loads(data)
+                delta = chunk["choices"][0]["delta"].get("content", "")
+                time.sleep(0.03)
+                print(delta, end="", flush=True)
+                full_reply += delta
+            except:
+                pass
+        return full_reply
 
 messages = []
 print("Type 'Bye' to exit the conversation")
-
 while (True):
     query = input("User: ")
     if query=="Bye":
         print("Assistant: Goodbye. It was nice talking to you!")
         break
     messages.append({"role":"user", "content":query})
+    print("Assistant: ", end="")
     reply = chat(messages)
     if reply==ChatStatus.ERROR:
         break
-    print("Assistant: ", reply)
     messages.append({"role":"assistant", "content":reply})
