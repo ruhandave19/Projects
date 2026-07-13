@@ -17,7 +17,7 @@ error_reason = {
     503: "Groq service temporarily unavailable"
 }
 
-def chat(messages, retries=3, print_reply=False):
+def chat(messages, retries=3):
     for attempt in range(retries):
         r = requests.post(base_url, headers=HEADERS,
                         json={"model":"llama-3.3-70b-versatile", "messages":messages, "stream":True},
