@@ -37,8 +37,11 @@ Allows users to scan ports on their system
 
 (7) Project 7: ai_chatbot (Python)
 
-Simple terminal based chatbot made using Groq API
+A terminal-based chatbot built using the Groq API with raw HTTP requests, 
+streaming responses, and graceful error handling.
 
 (8) Project 8: pdf_answering (Python)
 
-Terminal based pdf answering script which can answer to any pdf of choice
+A terminal-based PDF question-answering script using a RAG pipeline — 
+sentence boundary chunking, local embeddings via sentence-transformers, 
+ChromaDB for vector storage, and a Groq LLM for answer synthesis.
