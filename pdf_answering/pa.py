@@ -15,7 +15,7 @@ for page in pdf:
 def chunked_text(text, chunk_size=500, overlap=50):
     chunks = []
     start = 0
-    end = 500
+    end = chunk_size
     while start < len(text):
         while True:
             if text[end-1] in ("!", "?", "."):
@@ -70,7 +70,7 @@ error_reason = {
 def chat(messages, retries=3):
     for attempt in range(retries):
         r = requests.post(base_url, headers=HEADERS,
-                        json={"model":"llama-3.3-70b-versatile", "messages":messages, "stream":True},
+                        json={"model":"openai/gpt-oss-120b", "messages":messages, "stream":True},
                         stream=True)
         if r.status_code in (429, 500, 503):
             if attempt==retries-1:
@@ -116,7 +116,7 @@ while (True):
         break
     query_embedding = [model.encode(query)]
     results = collection.query(
-    query_embeddings=[e.tolist() for e in query_embedding],
+    query_embeddings=query_embedding,
     n_results=5
     )
     retrived_chunks = results["documents"][0]
