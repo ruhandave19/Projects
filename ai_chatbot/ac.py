@@ -20,7 +20,7 @@ error_reason = {
 def chat(messages, retries=3):
     for attempt in range(retries):
         r = requests.post(base_url, headers=HEADERS,
-                        json={"model":"llama-3.3-70b-versatile", "messages":messages, "stream":True},
+                        json={"model":"openai/gpt-oss-120b", "messages":messages, "stream":True},
                         stream=True)
         if r.status_code in (429, 500, 503):
             if attempt==retries-1:
