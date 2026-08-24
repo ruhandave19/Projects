@@ -45,3 +45,9 @@ streaming responses, and graceful error handling.
 A terminal-based PDF question-answering script using a RAG pipeline — 
 sentence boundary chunking, local embeddings via sentence-transformers, 
 ChromaDB for vector storage, and a Groq LLM for answer synthesis.
+
+(9) Project 9: financial_news_summarizer (Python)
+
+A terminal tool that scans NSE/Nifty 50 news via RSS and 
+LLM synthesis, distinguishing factual reporting from analyst opinion across per-company 
+and sector-wide views.
