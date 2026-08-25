@@ -55,4 +55,6 @@ Assistant: Goodbye. It was nice talking to you!
 
 ## Known Limitations
 - Chunking is sentence boundary based — retrieval quality may suffer on complex or implicit questions
-- Semantic chunking and improved retrieval planned for v2.0
+
+## Planned for v2.0
+- Semantic chunking, improved retrieval, and temperature tuning
