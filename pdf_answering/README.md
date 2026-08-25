@@ -58,3 +58,5 @@ Assistant: Goodbye. It was nice talking to you!
 
 ## Planned for v2.0
 - Semantic chunking, improved retrieval, and temperature tuning
+- LangChain, LlamaIndex
+- SQL Database
