@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "question": "Peoples from what countries and kingdoms are seen following Germany in Frédéric Sorrieu's painting",
+        "expected_page": 1
+    },
+    {
+        "id": 2,
+        "question": "What did Ernst Renan write in his essay 'What is a Nation?'",
+        "expected_page": 2
+    },
+    {
+        "id": 3,
+        "question": "What measures and practices were introduced by the French Revolutionaries",
+        "expected_page": 2
+    },
+    {
+        "id": 4,
+        "question": "Which two Italian-speaking provinces were part of the Habsburg Empire?",
+        "expected_page": 3
+    },
+    {
+        "id": 5,
+        "question": "What effect did the growth of industrial production and trade have in parts of Central Europe?",
+        "expected_page": 4
+    },
+    {
+        "id": 6,
+        "question": "How much custom duty and how many barriers would a merchant in 1833 having to travel from Hamburg to Nuremberg have to pass?",
+        "expected_page": 5
+    },
+    {
+        "id": 7,
+        "question": "Which peoples demanded nation states in 1848?",
+        "expected_page": 5
+    },
+    {
+        "id": 8,
+        "question": "What is suffrage according to the text?",
+        "expected_page": 6
+    },
+    {
+        "id": 9,
+        "question": "What changes did the Treaty of Vienna bring about?",
+        "expected_page": 6
+    },
+    {
+        "id": 10,
+        "question": "What did Mazzini believe with respect to nations?",
+        "expected_page": 7
+    },
+    {
+        "id": 11,
+        "question": "How many years passed since when the struggle for Greek independence started till Greece was recognised as an independent nation?",
+        "expected_page": 8
+    },
+    {
+        "id": 12,
+        "question": "According to the text, why were small producers in towns struggling during this period?",
+        "expected_page": 9
+    },
+    {
+        "id": 13,
+        "question": "What issue was a controversial one within the German liberal movement, and what were women admitted as when the Frankfurt parliament convened?",
+        "expected_page": [10, 11]
+    },
+    {
+        "id": 14,
+        "question": "Who was proclaimed the king of the new German empire, and on what date?",
+        "expected_page": 12
+    },
+    {
+        "id": 15,
+        "question": "What did Garibaldi do in 1860 according to the main narrative, and what additional detail does the text provide about the volunteers who joined him?",
+        "expected_page": [13, 14]
+    },
+    {
+        "id": 16,
+        "question": "If the female allegory of a nation has broken chains, sword, an olive branch around the sword, and rays of the rising sun, what does it signify?",
+        "expected_page": 15
+    }
+]
