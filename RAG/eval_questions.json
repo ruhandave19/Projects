@@ -1,82 +1,122 @@
 [
     {
         "id": 1,
-        "question": "Peoples from what countries and kingdoms are seen following Germany in Frédéric Sorrieu's painting",
+        "question": "Which era followed the Greek Dark Ages and how many years did it span?",
+        "expected_answer": "Archaic Greece, which spanned from  800 to 500 BCE (300 years).",
         "expected_page": 1
     },
     {
         "id": 2,
-        "question": "What did Ernst Renan write in his essay 'What is a Nation?'",
-        "expected_page": 2
+        "question": "What did the Greeks call themselves as, and from where was that name inspired?",
+        "expected_answer": "Hellenes, after the mythical kind Hellen",
+        "expected_page": 1
     },
     {
         "id": 3,
-        "question": "What measures and practices were introduced by the French Revolutionaries",
+        "question": "Contestants from what non-Modern Greece places attended the Ancient Olympic Games?",
+        "expected_answer": "Sicily and southern Italy",
         "expected_page": 2
     },
     {
         "id": 4,
-        "question": "Which two Italian-speaking provinces were part of the Habsburg Empire?",
-        "expected_page": 3
+        "question": "Explain how the Greeks came to adapt the Phoenecian alphabet.",
+        "expected_answer": "At the site of Al-Mina, along the Mediterranean coast in Syria where historians believe the Phoenician alphabet was first transmitted to the Greeks, Greek and Phoenician merchants exchanged goods. Far to the west, on the island of Ischia off the west coast of Italy, Greeks were competing with Phoenician merchants for trade with local peoples, whose iron ore was in strong demand. Thanks to their contact and trade with the Phoenicians, Greeks adapted the Phoenician alphabet to their own language, making an important innovation by adding vowels (a, e, i, o, u).",
+        "expected_page": 2
     },
     {
         "id": 5,
-        "question": "What effect did the growth of industrial production and trade have in parts of Central Europe?",
-        "expected_page": 4
+        "question": "In which century were the Iliad and Odyssey written for the first time?",
+        "expected_answer": "8th century BCE",
+        "expected_page": 3
     },
     {
         "id": 6,
-        "question": "How much custom duty and how many barriers would a merchant in 1833 having to travel from Hamburg to Nuremberg have to pass?",
-        "expected_page": 5
+        "question": "What did the Greeks do after setting up a colony?",
+        "expected_answer": "The free adult males of the community divided the colony’s land into equal lots.",
+        "expected_page": 3
     },
     {
         "id": 7,
-        "question": "Which peoples demanded nation states in 1848?",
-        "expected_page": 5
+        "question": "How did tyrants come about in Archaic Greece?",
+        "expected_answer": "In the society of Archaic Greece, the elite landowners, or aristoi, traditionally controlled the government and the priesthoods in the city-states. But thanks to the new ideas from the colonies, the common people, or kakoi, began demanding land and a voice in the governing of the polis. They were able to gain leverage in these negotiations because city-states needed troops in their wars for control of farmland. The nobility relied on the wealthier commoners, who could afford to equip themselves with iron weapons and armor. In some city-states, the aristoi and the kakoi were not able to resolve their differences peaceably. In such cases, a man who had strong popular support in the city would seize power and rule over the city. The Greeks referred to such populist leaders as tyrants.",
+        "expected_page": 3
     },
     {
         "id": 8,
-        "question": "What is suffrage according to the text?",
-        "expected_page": 6
+        "question": "Explain in detail how the problem of land shortage was dealt with, and what it resulted in.",
+        "expected_answer": "",
+        "expected_page": 3
     },
     {
         "id": 9,
-        "question": "What changes did the Treaty of Vienna bring about?",
-        "expected_page": 6
+        "question": "How were polis or city-states structured/ built in Ancient Greece? Which were the two most prominent polis?",
+        "expected_answer": "In the sixth century BCE, the difficulties caused by the land shortage were relieved by the invention of coinage. A century before, adopting a practice of the kings of Lydia in western Asia Minor (Turkey), Athens stamped silver pieces with the image of an owl, a symbol of wisdom often associated with the goddess Athena. Instead of weighing precious metals to use as currency or arguing over the value of bartered goods to trade, merchants could use coins as a simple medium of exchange. The agora, or place of assembly in each city-state, thus became a marketplace to buy and sell goods. In the sixth century BCE, this rise of a market economy stimulated economic growth as farmers, artisans, and merchants discovered stronger incentives to produce and procure more goods for profit. For example, farmers learned how to produce more food with the land they already possessed rather than always seeking more land. The economic growth of this period is reflected in the many new temples the Greek city-states constructed then.",
+        "expected_page": [1,4]
     },
     {
         "id": 10,
-        "question": "What did Mazzini believe with respect to nations?",
-        "expected_page": 7
+        "question": "Describe the political structure of Sparta",
+        "expected_answer": "Sparta had two hereditary kings drawn from rival royal families. Their powers were very limited, though both sat as permanent members of the Council of Elders and were priests in the state religion. On occasion, the Spartan kings also led armies into battle. The Assembly of Spartiates passed all laws and approved all treaties with the advice of the Council of Elders. This Assembly also elected five judges every year who administered the affairs of state, as well as the members of the Council of Elders.",
+        "expected_page": 4
     },
     {
         "id": 11,
-        "question": "How many years passed since when the struggle for Greek independence started till Greece was recognised as an independent nation?",
-        "expected_page": 8
+        "question": "What reform(s) did Cleisthenes make to Solon's form of government?",
+        "expected_answer": "He replaced the Council of Four Hundred with one of five hundred and reorganized the Athenians into ten new tribes, including in each one villages from different parts of Attica. Every year, each tribe chose fifty members by lot to sit in the new Council.",
+        "expected_page": [6,7]
     },
     {
         "id": 12,
-        "question": "According to the text, why were small producers in towns struggling during this period?",
-        "expected_page": 9
+        "question": "Explain how Athenian democracy differs from modern democracy.",
+        "expected_answer": "Athenian democracy which differs from modern republics in which citizens vote for representatives who sit in the legislature",
+        "expected_page": 7
     },
     {
         "id": 13,
-        "question": "What issue was a controversial one within the German liberal movement, and what were women admitted as when the Frankfurt parliament convened?",
-        "expected_page": [10, 11]
+        "question": "Describe the first Persian attack on Greece.",
+        "expected_answer": "In 490 BCE, Darius assembled a large fleet and army to cross the Aegean from Asia Minor, planning to subdue Athens and install one of Pisistratus’s sons as tyrant there. These Persian forces landed at Marathon on the west coast of Attica. They vastly outnumbered the Athenians but were drafted subjects with little motivation to fight and die. The Athenian soldiers, in contrast, were highly motivated to defend their democracy. The Persians could not withstand the Athenians’ spirited charge in the Battle of Marathon and were forced back onto their ships. Leaving the battle, the Persians then sailed around Attica to Athens. The soldiers at Marathon raced by land across the peninsula to guard the city. Seeing the city defended, the Persians returned to Asia Minor in defeat.",
+        "expected_page": 8
     },
     {
         "id": 14,
-        "question": "Who was proclaimed the king of the new German empire, and on what date?",
-        "expected_page": 12
+        "question": "What led to the Greek city-states uniting for the first time?",
+        "expected_answer": "Persian invasion led by Xerxes in 480BCE",
+        "expected_page": 8
     },
     {
         "id": 15,
-        "question": "What did Garibaldi do in 1860 according to the main narrative, and what additional detail does the text provide about the volunteers who joined him?",
-        "expected_page": [13, 14]
+        "question": "What are the names of the alliances led by Athens and Sparta respectively?",
+        "expected_answer": "Athens led the Delian League and Sparta the Peloponnesian League.",
+        "expected_page": [8,9]
     },
     {
         "id": 16,
-        "question": "If the female allegory of a nation has broken chains, sword, an olive branch around the sword, and rays of the rising sun, what does it signify?",
-        "expected_page": 15
+        "question": "How did Pericles die?",
+        "expected_answer": "Due to a plague that errupted in 426BCE.",
+        "expected_page": 9
+    },
+    {
+        "id": 17,
+        "question": "What actions of Pericles led to initial peace between Sparta and Athens?",
+        "expected_answer": "Pericles persuaded his fellow Athenians to withdraw from the countryside of Attica and move within the walls of Athens, reasoning that the navy would provide them food and supplies and the wall would keep them safe until Sparta tired of war and sought peace. Pericles’s assessment proved correct. In 421 BCE, after ten years of war, the Spartans and Athenians agreed to the Peace of Nicias, which kept the Athenian empire intact.",
+        "expected_page": 9
+    },
+    {
+        "id": 18,
+        "question": "What directly led to the fall of the Peloponnesian\nLeague?",
+        "expected_answer": "Thebians invaded the Peloponnese and liberated Messene from Spartan rule, depriving the Spartans of most of their helot labor there. Without the helots, the Spartans could not support their military system as before, and their Peloponnesian League collapsed.",
+        "expected_page": 10
+    },
+    {
+        "id": 19,
+        "question": "Analyze the text and based on the given information, explain whether or not Socrates was a sophist.",
+        "expected_answer": "No, he was not, for he publically challenged the sophists and was ultimately sentenced to death by the jury",
+        "expected_page": 11
+    },
+    {
+        "id": 20,
+        "question": "Whose approach is described in the text to be similar to that of modern historians?",
+        "expected_answer": "Thucydides, who employed objectivity to explain the politics, events, and brutality of the Peloponnesian conflict",
+        "expected_page": 12
     }
 ]
