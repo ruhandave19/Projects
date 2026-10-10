@@ -5,7 +5,7 @@ from pipeline import text_extraction, chunked_text, store_data, embedding, retri
 con = sqlite3.connect("eval_queries.db")
 cur = con.cursor()
 
-pdf_path = "Ancient_Greece.pdf"
+pdf_path = "data/Ancient_Greece.pdf"
 
 text, page_boundaries = text_extraction(pdf_path)
 
