@@ -17,3 +17,7 @@ $RECYCLE.BIN/
 .env
 
 */chroma_data
+
+*/eval_queries.db
+
+*/chunk_queries.db
