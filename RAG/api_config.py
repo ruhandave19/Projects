@@ -95,7 +95,7 @@ def chat(messages, stream_status, llm_provider, retries=2):
         for attempt in range(1, retries + 2):
             try: 
                 r = client.models.generate_content(
-            model="gemini-3.1-flash-lite",
+            model="gemini-3.5-flash-lite",
             contents=messages,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
@@ -106,7 +106,7 @@ def chat(messages, stream_status, llm_provider, retries=2):
             except APIError as e:
                 print(f'Attempt {attempt}: Gemini call failed -> {e}')
                 if attempt <= retries:
-                    if e.code in (429, 500, 503):
+                    if e.code in (500, 503):
                         wait_time = min(5 * (2 ** (attempt - 1)), 30) 
                         wait_time += random.uniform(0, 2)
                         print(f'Waiting {wait_time:.1f} seconds before retrying...')
