@@ -20,8 +20,9 @@ con.commit()
 
 model, collection = embedding(chunks, ids, script="EVAL")
 
-with open("eval_questions.json", "r") as f:
-    eval_questions = json.load(f)
+with open("eval_questions.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+    eval_questions = data["questions"]
 
 cur.execute("CREATE TABLE IF NOT EXISTS eval_runs(question_id INTEGER PRIMARY KEY, page_check TEXT, question TEXT, chunk_text TEXT, expected_answer TEXT, api_response TEXT)")
 cur.execute("DELETE FROM eval_runs")
