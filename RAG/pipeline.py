@@ -8,9 +8,12 @@ def text_extraction(pdf_add):
     page_boundaries = []
     for page in pdf:
         start_offset = len(text)
-        text += page.get_text()
-        end_offset = len(text)-1
-        page_boundaries.append((page.number+1, start_offset, end_offset))
+        lines = page.get_text().splitlines()
+        filtered_lines = [line for line in lines if "Access for free at openstax.org" not in line]
+        page_text = "\n".join(filtered_lines).strip() + "\n"
+        text += page_text
+        end_offset = len(text) - 1
+        page_boundaries.append((page.number + 1, start_offset, end_offset))
     return text, page_boundaries
 
 def chunked_text(text, chunk_size=500, overlap=50):
