@@ -44,13 +44,13 @@
     {
         "id": 8,
         "question": "Explain in detail how the problem of land shortage was dealt with, and what it resulted in.",
-        "expected_answer": "",
+        "expected_answer": "In the sixth century BCE, the difficulties caused by the land shortage were relieved by the invention of coinage. A century before, adopting a practice of the kings of Lydia in western Asia Minor (Turkey), Athens stamped silver pieces with the image of an owl, a symbol of wisdom often associated with the goddess Athena. Instead of weighing precious metals to use as currency or arguing over the value of bartered goods to trade, merchants could use coins as a simple medium of exchange. The agora, or place of assembly in each city-state, thus became a marketplace to buy and sell goods. In the sixth century BCE, this rise of a market economy stimulated economic growth as farmers, artisans, and merchants discovered stronger incentives to produce and procure more goods for profit. For example, farmers learned how to produce more food with the land they already possessed rather than always seeking more land. The economic growth of this period is reflected in the many new temples the Greek city-states constructed then.",
         "expected_page": 3
     },
     {
         "id": 9,
         "question": "How were polis or city-states structured/ built in Ancient Greece? Which were the two most prominent polis?",
-        "expected_answer": "In the sixth century BCE, the difficulties caused by the land shortage were relieved by the invention of coinage. A century before, adopting a practice of the kings of Lydia in western Asia Minor (Turkey), Athens stamped silver pieces with the image of an owl, a symbol of wisdom often associated with the goddess Athena. Instead of weighing precious metals to use as currency or arguing over the value of bartered goods to trade, merchants could use coins as a simple medium of exchange. The agora, or place of assembly in each city-state, thus became a marketplace to buy and sell goods. In the sixth century BCE, this rise of a market economy stimulated economic growth as farmers, artisans, and merchants discovered stronger incentives to produce and procure more goods for profit. For example, farmers learned how to produce more food with the land they already possessed rather than always seeking more land. The economic growth of this period is reflected in the many new temples the Greek city-states constructed then.",
+        "expected_answer": "Towns arose around a hill fortress or acropolis to which inhabitants could flee in times of danger. Sparta and Athens were the two most influencal ones.",
         "expected_page": [1,4]
     },
     {
@@ -104,7 +104,7 @@
     {
         "id": 18,
         "question": "What directly led to the fall of the Peloponnesian\nLeague?",
-        "expected_answer": "Thebians invaded the Peloponnese and liberated Messene from Spartan rule, depriving the Spartans of most of their helot labor there. Without the helots, the Spartans could not support their military system as before, and their Peloponnesian League collapsed.",
+        "expected_answer": "Thebans invaded the Peloponnese and liberated Messene from Spartan rule, depriving the Spartans of most of their helot labor there. Without the helots, the Spartans could not support their military system as before, and their Peloponnesian League collapsed.",
         "expected_page": 10
     },
     {
