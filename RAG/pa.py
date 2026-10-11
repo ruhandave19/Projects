@@ -21,10 +21,8 @@ con.commit()
 model, collection = embedding(chunks, ids, script="PA")
 
 cur.execute("PRAGMA foreign_keys = ON") 
-cur.execute("CREATE TABLE IF NOT EXISTS queries(query_id INTEGER PRIMARY KEY, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, query_text TEXT, reply TEXT)")
-cur.execute("DELETE FROM queries")
+cur.execute("CREATE TABLE IF NOT EXISTS queries(query_id INTEGER PRIMARY KEY, timestamp DATETIME DEFAULT (datetime('now', '+5 hours', '+30 minutes')), query_text TEXT, reply TEXT)")
 cur.execute("CREATE TABLE IF NOT EXISTS query_chunks(query_id INTEGER, chunk_id TEXT, FOREIGN KEY (query_id) REFERENCES queries(query_id), FOREIGN KEY (chunk_id) REFERENCES chunk_store(chunk_id))")
-cur.execute("DELETE FROM query_chunks")
 con.commit()
 
 print("Type 'Bye' to exit the conversation")
