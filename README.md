@@ -40,11 +40,13 @@ Allows users to scan ports on their system
 A terminal-based chatbot built using the Groq API with raw HTTP requests, 
 streaming responses, and graceful error handling.
 
-(8) Project 8: pdf_answering (Python)
+(8) Project 8: RAG (Python), v2.0 [previously pdf_answering]
 
-A terminal-based PDF question-answering script using a RAG pipeline — 
-sentence boundary chunking, local embeddings via sentence-transformers, 
-ChromaDB for vector storage, and a Groq LLM for answer synthesis.
+Consists of 2 parts that share one retrieval pipeline:
+
+(a) PDF Answering (pa.py): A terminal-based PDF question-answering script using a RAG pipeline: sentence boundary chunking with page tracking, local embeddings via sentence-transformers, ChromaDB for vector storage, and an LLM for answer synthesis over raw HTTP requests with streaming and retry logic. A SQLite database logs the chunks (with their pages), every question and answer, and the chunks retrieved for each answer.
+
+(b) Evaluation (evals.py): Runs 20 fixed questions with known answers and expected pages against an openly licensed OpenStax chapter. It checks automatically whether retrieval found the right pages, logs each run to SQLite for manual answer grading, and paces its Gemini API calls to stay within free-tier limits.
 
 (9) Project 9: financial_news_summarizer (Python)
 
