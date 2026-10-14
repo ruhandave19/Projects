@@ -1,0 +1,1 @@
+An educational project that uses a vision LLM to describe candlestick charts of Nifty 50 stocks, and compares its judgement against a rule-based detector. Not financial advice.
