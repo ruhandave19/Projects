@@ -21,3 +21,5 @@ $RECYCLE.BIN/
 RAG/eval_queries.db
 
 RAG/chunks_queries.db
+
+stock_chart_summarizer/charts
