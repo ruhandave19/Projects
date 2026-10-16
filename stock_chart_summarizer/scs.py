@@ -5,10 +5,8 @@ data = yf.Ticker("HDFCBANK.NS")
 
 df = data.history(period='1y', interval='1d', auto_adjust=True)
 
-df_last3 = df.head(3)
-
 mpf.plot(
-    df_last3,
+    df.head(3),
     type="candle",
     volume=True,
     tight_layout=True,
