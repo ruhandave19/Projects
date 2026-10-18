@@ -6,7 +6,7 @@ data = yf.Ticker("HDFCBANK.NS")
 df = data.history(period='6mo', interval='1d', auto_adjust=True)
 
 mpf.plot(
-    df.head(3),
+    df.tail(3),
     type="candle",
     tight_layout=True,
     figsize=(6, 6),
