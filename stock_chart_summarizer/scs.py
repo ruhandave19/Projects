@@ -16,11 +16,11 @@ mpf.plot(
 )
 
 mpf.plot(
-    df,
+    df.tail(40),
     type="candle",
     style="yahoo",
     tight_layout=True,
     figsize=(18, 10),
     scale_padding=0.4,
-    savefig=dict(fname="charts/HDFCBANK_1y.png", dpi=150, bbox_inches="tight")
+    savefig=dict(fname="charts/HDFCBANK_40d.png", dpi=150, bbox_inches="tight")
 )
