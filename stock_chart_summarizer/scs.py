@@ -8,6 +8,7 @@ df = data.history(period='6mo', interval='1d', auto_adjust=True)
 mpf.plot(
     df.tail(3),
     type="candle",
+    style="yahoo",
     tight_layout=True,
     figsize=(6, 6),
     scale_padding=0.4,
@@ -17,6 +18,7 @@ mpf.plot(
 mpf.plot(
     df,
     type="candle",
+    style="yahoo",
     tight_layout=True,
     figsize=(18, 10),
     scale_padding=0.4,
