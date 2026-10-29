@@ -5,6 +5,8 @@ from google.genai.errors import APIError
 import time, random
 from dotenv import load_dotenv
 
+SKIP_LAST_3_CANDLES = False
+
 data = yf.Ticker("HDFCBANK.NS")
 
 df = data.history(period='6mo', interval='1d', auto_adjust=True)
@@ -133,3 +135,27 @@ for attempt in range(1, retries+2):
         else:
             print(f"Error {e.code}: {e.message}")
             exit()
+
+
+if not SKIP_LAST_3_CANDLES:
+    volume = df["Volume"].tail(10).rolling(10).sum() 
+else: 
+    df_2 = df.shift(periods=-3)
+    volume = df_2["Volume"].tail(10).rolling(10).sum()
+
+vol_ma = int((volume.values[9])/10)
+
+last3_volumes = df.tail(3)["Volume"].tolist()
+volume_difference = []
+
+print(last3_volumes)
+print(vol_ma)
+
+if all(v > vol_ma for v in last3_volumes):
+    print("\n\nLast 3 Volumes Exceed 10 day moving average\n\n")
+else:
+    for v in last3_volumes:
+        volume_difference.append(v-vol_ma)
+    print("\n\nThis stock contains volumes lower than 10 day moving average\nDifference between volume and moving average gives:")
+    print(volume_difference)
+    print("(Rightmost value is latest day volume difference)\n\n")
